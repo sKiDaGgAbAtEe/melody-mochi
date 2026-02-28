@@ -147,7 +147,7 @@ FIREBASE: `))}restoreState_(){this.tryAuth(),this.tryAppCheck();for(const n of t
   .their-turn-text strong { color: var(--text); }
 
   /* YouTube player (hidden) */
-  .yt-hidden { position: fixed; left: -9999px; top: -9999px; width: 1px; height: 1px; }
+  .yt-hidden { position: fixed; bottom: 0; right: 0; width: 1px; height: 1px; opacity: 0.01; }
 
   /* Reveal bar */
   .reveal-bar { display: flex; gap: 5px; margin: 20px 0 6px; }
