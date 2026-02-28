@@ -32,8 +32,8 @@ FIREBASE: `))}restoreState_(){this.tryAuth(),this.tryAppCheck();for(const n of t
   }
   *{box-sizing:border-box;margin:0;padding:0;}
   html,body{width:100%;min-height:100vh;background:#060608;color:#f2f0ff;font-family:'DM Sans',sans-serif;}
-  #root{min-height:100vh;display:flex;align-items:flex-start;justify-content:center;}
-  .app{width:100%;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px;position:relative;overflow-x:hidden;}
+  #root{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;}
+  .app{width:100%;max-width:600px;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px;position:relative;overflow-x:hidden;}
   .app::before{content:'';position:fixed;inset:0;background-image:linear-gradient(rgba(255,61,110,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,61,110,0.03) 1px,transparent 1px);background-size:40px 40px;pointer-events:none;z-index:0;}
   .orb{position:fixed;border-radius:50%;filter:blur(120px);opacity:0.18;pointer-events:none;z-index:0;}
   .orb1{width:500px;height:500px;background:radial-gradient(circle,#ff3d6e,transparent);top:-150px;right:-100px;animation:float1 12s ease-in-out infinite;}
@@ -42,7 +42,7 @@ FIREBASE: `))}restoreState_(){this.tryAuth(),this.tryAppCheck();for(const n of t
   @keyframes float1{0%,100%{transform:translate(0,0)}50%{transform:translate(-30px,40px)}}
   @keyframes float2{0%,100%{transform:translate(0,0)}50%{transform:translate(40px,-30px)}}
   @keyframes float3{0%,100%{transform:translate(0,0)}33%{transform:translate(20px,-20px)}66%{transform:translate(-20px,20px)}}
-  .card{background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:36px;width:100%;max-width:500px;position:relative;z-index:1;box-shadow:0 0 0 1px rgba(255,255,255,0.03),0 40px 80px rgba(0,0,0,0.6);animation:cardIn 0.4s cubic-bezier(0.34,1.56,0.64,1);}
+  .card{background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:36px;width:100%;max-width:500px;position:relative;z-index:1;box-shadow:0 0 0 1px rgba(255,255,255,0.03),0 40px 80px rgba(0,0,0,0.6);animation:cardIn 0.4s cubic-bezier(0.34,1.56,0.64,1);margin-left:auto;margin-right:auto;}
   @keyframes cardIn{from{opacity:0;transform:translateY(16px) scale(0.97)}to{opacity:1;transform:none}}
   .logo{font-family:'Bebas Neue',sans-serif;font-size:3.2rem;letter-spacing:2px;background:linear-gradient(135deg,#ff3d6e 0%,#ff9500 50%,#ff3d6e 100%);background-size:200% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;text-align:center;line-height:1;animation:shimmer 3s linear infinite;}
   @keyframes shimmer{to{background-position:200% center}}
